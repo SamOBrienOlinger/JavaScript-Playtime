@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2rem;
+    font-style: italic;
+    margin: auto;
+}
+
+#hero-image {
+    background-image: url(assets/Images/cuss-yeah.jpg);
+    height: 50vh;
+    width: auto;
+}
