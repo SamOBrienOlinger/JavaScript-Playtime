@@ -86,7 +86,7 @@ function checkName() {
     return true;
   } 
 
-  alert("please enter the name of soem Cuss");
+  alert("please enter the name of some Cussin' Cusser that needs a good Cussin' out");
   return false;
 }
 
