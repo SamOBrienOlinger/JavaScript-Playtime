@@ -28,5 +28,19 @@ h1 {
 
 #gif {
     background-image: url(../Images/cussGif.gif);
+    height: 35vh;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
     /*display: none;*/
+}
+
+#last-image {
+    background-image: url(../Images/BBB.png);
+    height: 35vh;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
 }
