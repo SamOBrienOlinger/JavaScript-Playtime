@@ -26,15 +26,15 @@ h1 {
     background-position: center;
 }
 
-#gif {
+/*#gif {
     background-image: url(../Images/cussGif.gif);
     height: 35vh;
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
-    /*display: none;*/
-}
+    /*display: none;
+}*/
 
 #last-image {
     background-image: url(../Images/BBB.png);
@@ -43,4 +43,27 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     background-position: center;
+}
+
+.like {
+    display: block;
+    width: 15em;
+    height: 20vh;
+    margin: 0 auto;
+    background: url(..//Images/cussGif.gif) 0 0 no-repeat;
+    background-size: 90%;
+    animation: like-gif steps(5) 1s infinite both;
+}
+.pause {
+    animation-play-state: paused;
+}
+
+
+@keyframes like-gif {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
 }
