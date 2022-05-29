@@ -105,3 +105,10 @@ function genHex() {
 
   finalPhrase.innerHTML = `${name} ${FIRST_PHRASE.innerHTML} ${SECOND_PHRASE.innerHTML} ${THIRD_PHRASE.innerHTML}`;
 }
+
+do show(generateGif);
+
+while (checkName) {
+    if (document.getElementById("finalButton").value !== "") {          
+    }
+}
