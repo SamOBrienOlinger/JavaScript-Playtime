@@ -9,10 +9,113 @@
 </head>
 
 <body id="body">
-
+  <section id="section-one">
     <h1>The Cuss?</h1>
     <div id="hero-image"></div>
-    
+  </section>
+  
+  <div>
+    <p
+       aria-label="Make three 'curses' to put a Hex on your favorite Nemesis!"
+       >
+       Make three "curses" to put a Hex on your favorite Nemesis!
+    </p>
+ </div>
+</section>
+<section class="sections">
+ <div id="error">
+    <h2 aria-label="Insert your Nemesis' name below">
+       Step 1: insert the name of some Cuss
+    </h2>
+    <input
+       id="name"
+       name="name"
+       type="text"
+       placeholder="Who needs cussin' out?"
+       aria-label="Insert a name below"
+       />
+ </div>
+</section>
+<section class="sections">
+ <div>
+    <h2>Step 2: Click Here to start your Cuss!</h2>
+ </div>
+ <div>
+    <button
+       class="button curse-button disabled"
+       data-index="1"
+       id="firstButton"
+       aria-label="Start Cussin'!"
+       >
+    Cuss!
+    </button>
+ </div>
+ <div>
+   <output class="output">
+      <b id="firstResult"></b>
+   </output>
+ </div>
+</section>
+<section class="sections">
+ <div>
+    <h2>Step 3: Click Here to get the middle of Cuss!</h2>
+ </div>
+ <div>
+    <button
+       class="button curse-button disabled"
+       data-index="2"
+       id="secondButton"
+       aria-label="The middle of your Cuss!"
+       >
+    Cuss!
+    </button>
+ </div>
+ <div>
+    <output class="output" id="secondOutput">
+       <b id="secondResult"></b>
+    </output>
+ </div>
+</section>
+<section class="sections">
+ <div>
+    <h2>Step 4: Click Here to get the last part of your Cuss</h2>
+ </div>
+ <div>
+    <button
+       class="button curse-button disabled"
+       data-index="3"
+       id="thirdButton"
+       aria-label="The last part of your Cuss"
+       >
+    Cuss!
+    </button>
+ </div>
+ <div>
+    <output class="output" id="thirdOutput">
+       <b id="thirdResult"></b>
+    </output>
+ </div>
+</section>
+<section>
+ <div>
+    <div>
+       <button id="finalButton"  class="disabled" aria-label="Cast your Hex">
+          <b id="fullPhrase">Step 5: Click Here - "Your Cuss is Ready"</b>
+       </button>
+    </div>
+    <output class="output">
+       <b id="finalResult"></b>
+    </output>
+ </div>
+ <div>
+    <a href="#top">
+      <div id="refresh" aria-label="Back to the Top and create a new Cuss">
+        <b>Click Here to Go Again! Cuss another Cusser!</b>
+      </div> 
+    </a> 
+ </div>
+</section>
+
 <script src="assets/js/script.js"></script>
 </body>
 </html>

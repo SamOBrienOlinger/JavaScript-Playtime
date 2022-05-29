@@ -1,16 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 * {
-    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'nunito, sans serif';
+    text-align: center;
+}
+
+body {
+    display: block;
+    background: goldenrod;
 }
 
 h1 {
     font-size: 2rem;
     font-style: italic;
     margin: auto;
+    text-align: center;
 }
 
 #hero-image {
-    background-image: url(assets/Images/cuss-yeah.jpg);
+    background-image: url(../Images/cussyeah2.png);
     height: 50vh;
-    width: auto;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
 }
