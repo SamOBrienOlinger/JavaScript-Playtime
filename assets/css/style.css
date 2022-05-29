@@ -25,3 +25,8 @@ h1 {
     margin-right: auto;
     background-position: center;
 }
+
+#gif {
+    background-image: url(../Images/cussGif.gif);
+    /*display: none;*/
+}

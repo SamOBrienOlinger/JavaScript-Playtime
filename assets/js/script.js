@@ -12,23 +12,22 @@ let phraseListOne = [
   "shall always",
   "is cursed to",
   "will forever",
-  "is destined to",
+  "is surely going to",
   "is fated to",
 ];
 let phraseListTwo = [
   "be covered in",
-  "be imprisoned in",
-  "be chained to a",
-  "be infected with",
-  "be haunted by",
+  "be trapped in",
+  "be shot by",
+  "be hunted by",
+  "be turned into",
 ];
 let phraseListThree = [
-  "a mountain of Banshee poop!",
-  "buckets of Leprechaun spittle!",
-  "the Divil's fire for all eternity!",
-  "a lake of boiling stout!",
-  "an ocean of poison whiskey for infinity!",
-  "rotten potatoes for ten years!",
+  "a tiny Den with nowhere to hide!",
+  "a thousand fox traps",
+  "Boggis' shotgun!",
+  "a lake of Bean's cider!",
+  "shopped in half by Bunce's butcher knife!",
 ];
 
 let phraseListIndexMap = [phraseListOne, phraseListTwo, phraseListThree];
@@ -75,8 +74,12 @@ buttonFinal.addEventListener("click", (e) => {
   
   if (checkName()) {
     genHex();
-  }
+}
 
+  if (genHex) {
+    let generateGif = document.getElementById("gif");
+    alert(generateGif);
+  }
 });
 
 // **** ENSURE USER INPUTS TEXT TO START HEX CODE ****
