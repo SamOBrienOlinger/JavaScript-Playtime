@@ -113,7 +113,7 @@ while (checkName) {
     }
 }
 
-var image = document.getElementById("likes"), 
+/*var image = document.getElementById("likes"), 
     button = document.getElementById("pause");
     
 if (image.classList && image && button) {
@@ -126,4 +126,21 @@ if (image.classList && image && button) {
             this.value = 'pause';
         }
     };
-}
+}*/
+
+var image = document.getElementById("likes"), 
+    button = document.getElementById("pause")
+  
+    function pauseButton() {
+    if (image.classList && image && button) {
+    button.addEventlistener("click", pauseButton()) = pauseButton;
+        if (this.value == 'pause') {
+            image.classList.add('pause');
+            this.value = 'play';
+        } else {
+            image.classList.remove('pause');
+            this.value = 'pause';
+        }
+      }
+    }
+pauseButton();
