@@ -128,10 +128,11 @@ if (image.classList && image && button) {
     };
 }*/
 
+
 var image = document.getElementById("likes"), 
     button = document.getElementById("pause")
   
-    function pauseButton() {
+  /*function pauseButton() {
     if (image.classList && image && button) {
     button.addEventlistener("click", pauseButton()) = pauseButton;
         if (this.value == 'pause') {
@@ -144,3 +145,20 @@ var image = document.getElementById("likes"),
       }
     }
 pauseButton();
+*/
+
+
+//this function actually works, but can't make gif reappear yet
+
+//Also, it only works when logged to the console in Dev Tools! 
+
+function myFunction() {
+  var x = document.getElementById('likes');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+
+likes.addEventListener('click', myFunction);
