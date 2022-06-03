@@ -76,8 +76,10 @@ buttonFinal.addEventListener("click", (e) => {
     genHex();
 }
 
+let generateGif = document.getElementById("gif");
+
   if (genHex) {
-    let generateGif = document.getElementById("gif");
+    
     alert(generateGif);
   }
 });
@@ -147,7 +149,7 @@ var image = document.getElementById("likes"),
 pauseButton();
 */
 
-
+/*
 //this function actually works, but can't make gif reappear yet
 
 //Also, it only works when logged to the console in Dev Tools! 
@@ -162,3 +164,29 @@ function myFunction() {
 }
 
 likes.addEventListener('click', myFunction);
+*/
+
+/*
+function appear() {
+
+  if (this.style.display === "") {
+      this.style.display = "none";
+  } else {
+      this.style.display = "";
+  }
+  
+}
+
+let foxGif = document.getElementById('gif');
+
+foxGif.addEventListener('click', appear);
+*/
+
+
+//this makes whole div disappear when pause is clicked
+const element = document.getElementById("pause");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("gif").innerHTML = "Hello World";
+}
