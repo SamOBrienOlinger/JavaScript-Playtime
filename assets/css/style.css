@@ -45,7 +45,7 @@ h1 {
     background-position: center;
 }
 
-.like {
+#like {
     display: block;
     width: 15em;
     height: 20vh;
@@ -54,10 +54,10 @@ h1 {
     background-size: 90%;
     animation: like-gif steps(5) 1s infinite both;
 }
-.pause {
+
+#pause {
     animation-play-state: paused;
 }
-
 
 @keyframes like-gif {
   0% {

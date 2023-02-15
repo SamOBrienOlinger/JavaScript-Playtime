@@ -131,8 +131,8 @@ if (image.classList && image && button) {
 }*/
 
 
-var image = document.getElementById("likes"), 
-    button = document.getElementById("pause")
+// var image = document.getElementById("likes") 
+    // button = document.getElementById("pause")
   
   /*function pauseButton() {
     if (image.classList && image && button) {
@@ -184,9 +184,18 @@ foxGif.addEventListener('click', appear);
 
 
 //this makes whole div disappear when pause is clicked
-const element = document.getElementById("pause");
-element.addEventListener("click", myFunction);
+// const element = document.getElementById("pause");
+// element.addEventListener("click", myFunction);
 
-function myFunction() {
-  document.getElementById("gif").innerHTML = "Hello World";
-}
+// function myFunction() {
+//   document.getElementById("gif").innerHTML = "Hello World";
+// }
+
+const pauseGif = document.getElementById("pause");
+pauseGif.addEventListener('click', () => {
+  const animations = document.querySelectorAll('animation');
+  animations.forEach(animation => {
+    const running = animation.style.animationPlayState || 'running';
+    animation.style.animationPlayState = running === 'running' ? 'paused' : 'running';
+  })
+});
