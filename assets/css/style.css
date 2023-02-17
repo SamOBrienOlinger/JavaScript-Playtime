@@ -36,13 +36,17 @@ h1 {
     /*display: none;
 }*/
 
-#last-image {
+/* #last-image {
     background-image: url(../Images/BBB.png);
     height: 35vh;
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
+} */
+
+#refresh {
+    padding: 2rem;
 }
 
 #like {
@@ -52,7 +56,15 @@ h1 {
     margin: 0 auto;
     background: url(..//Images/cussGif.gif) 0 0 no-repeat;
     background-size: 90%;
-    animation: like-gif steps(5) 1s infinite both;
+    /* animation: like-gif steps(5) 1s infinite both; */
+    animation-duration: 1s;
+    /* animation-timing-function: steps(5); */
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-name: like-gif;
 }
 
 #pause {
@@ -67,3 +79,98 @@ h1 {
     background-position: 100%;
   }
 }
+
+.btn {
+    background-color: cornflowerblue;
+    border: 0;
+    border-radius: 0.25rem;
+    color: #FFF;
+    display: inline-block;
+    margin-block-end: 0.5rem;
+    padding: 1rem;
+  }
+
+  .circle {
+    align-items: center;
+    border-radius: 50%;
+    color: #FFF;
+    display: flex;
+    /* height: 35vh; */
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-image: url(../Images/BBB.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    --w: 150px;
+    height: var(--w);
+    width: var(--w);
+  }
+
+  .a-slide {
+    --animdur: 10s;
+    --animn: slide;
+  }
+  [data-animation] {
+    animation: var(--animn, none) var(--animdur, 0s) var(--animtf, linear) var(--animdel, 0s) var(--animic, infinite) var(--animdir, alternate) var(--animfm, none) var(--animps, running);
+  }
+
+  .chk {
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    user-select: none;
+  }
+  .chk::before {
+    --ico-check: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M14 2.5l-8.5 8.5-3.5-3.5-1.5 1.5 5 5 10-10z" fill="white"></path></svg>');
+    background: silver var(--ico-check) center center/70% no-repeat;
+    border-radius: 0.25rem;
+    display: inline-block;
+    content: '';
+    height: 1.25rem;
+    margin-inline-end: 0.25rem;
+    width: 1.25rem;
+  }
+
+    /* STATE */
+    [data-animation-pause]:checked ~ [data-animation] {
+        --animps: paused;
+      }
+  
+      [data-animation-pause]:checked + label::before {
+        background-color: cornflowerblue;
+      }
+
+      /* KEYFRAMES */
+      @keyframes opacity {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(.9);
+        }
+        50% {
+          transform: scale(1);
+        }
+        75% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes slide {
+        from { margin-left: 0%; }
+        to { margin-left: calc(100% - var(--w, 150px)); }
+      }
