@@ -8,26 +8,29 @@ const THIRD_PHRASE = document.getElementById("thirdResult");
 const NAME_ELEMENT = document.getElementById("name");
 
 let phraseListOne = [
-  "will",
-  "shall always",
-  "is cursed to",
+  // "is destined to",
+  // "is definately going to",
+  // "is cursed to",
   "will forever",
-  "is surely going to",
+  "is definately going to",
   "is fated to",
 ];
 let phraseListTwo = [
-  "be covered in",
-  "be trapped in",
+  "be chopped up by",
+  "be trapped by",
   "be shot by",
   "be hunted by",
-  "be turned into",
+  // "be cornered by",
 ];
 let phraseListThree = [
-  "a tiny Den with nowhere to hide!",
-  "a thousand fox traps",
-  "Boggis' shotgun!",
-  "a lake of Bean's cider!",
-  "shopped in half by Bunce's butcher knife!",
+  // "a tiny Den with nowhere to hide!",
+  // "a thousand fox traps",
+  // "Boggis' shotgun!",
+  // "a lake of Bean's cider!",
+  // "by Bunce's butcher knife!",
+  "Boggis",
+  "Bunce",
+  "Bean",
 ];
 
 let phraseListIndexMap = [phraseListOne, phraseListTwo, phraseListThree];
